@@ -164,7 +164,7 @@ class EventResource extends Resource
                     ->searchable(['name']),
                     ])
                 ->description('مسؤول عنه هيد الاجتماع    ')
-            ->collapsed()->hidden(fn () => !auth()->user()->hasRole('Head')),
+            ->collapsed(),
                 
             Section::make('بيانات الحدث الاوف لاين')
             ->schema([
